@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trybewarts</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <img src="images/trybewarts-header-logo.svg" class='trybewarts-header-logo'>
+    <h1 id='trybewarts-header-title'>Trybewarts</h1>
+    <form class="trybewarts-login">
+      <input class="login-input form-control" type="login" name="login" placeholder="Login" >
+      <input class="pwd-input form-control mx-1" type="password" name="pwd" placeholder="Senha" >
+      <button class="submit-button btn btn-dark" type="submit">Logar</button>
+    </form>
+  </header>
+  <main class="d-flex align-items-center justify-content-around my-4">
+    <form action="#" method="GET" id="evaluation-form" class="d-flex flex-column">
+      <!-- requisito 8, 10 -->
+      <div class="d-flex">
+        <input class="form-control" type="text" name="nome" id="input-name" placeholder="Nome">
+        <input class="form-control" type="text" name="sobrenome" id="input-lastname" placeholder="Sobrenome">
+      </div>
+      <!-- requisito 9, 11 -->
+      <div class="d-flex align-items-center">
+        <input class="form-control" type="text" name="email" id="input-email" placeholder="Email">
+        <label class="form-label" for="house">Casa:</label>
+        <select name="house" id="house" class="form-select mx-1">
+          <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+          <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+          <option value="Corvinode" id="corvinode-house">Corvinode</option>
+          <option value="Pytherina" id="pytherina-house">Pytherina</option>
+        </select>
+      </div>
+      <!-- requisito 12 -->
+      <label for="" id="label-family">Qual sua família?</label>
+      <label class="form-check-label" for="frontend-family">
+        <input class="form-check-input" type="radio" name="family" value="Frontend" id="frontend-family"> Família Frontend
+      </label>
+      <label class="form-check-label" for="backend-family">
+        <input class="form-check-input" type="radio" name="family" value="Backend" id="backend-family"> Família Backend
+      </label>
+      <label class="form-check-label" for="fullstack-family">
+        <input class="form-check-input" type="radio" name="family" value="FullStack" id="fullstack-family">  Família Fullstack
+      </label>
+      <!-- requisito 13 -->
+      <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+      <div class="d-flex">
+        <label class="form-check-label" for="HoFs">
+          <input class="form-check-input subject" type="checkbox" name="conteudo" value="HoFs" id="HoFs"> HoFs
+        </label>
+        <label class="form-check-label" for="Jest">
+          <input class="form-check-input subject" type="checkbox" name="conteudo" value="Jest" id="Jest"> Jest
+        </label>
+        <label class="form-check-label" for="Promises">
+          <input class="form-check-input subject" type="checkbox" name="conteudo" value="Promises" id="Promises"> Promises
+        </label>
+        <label class="form-check-label" for="React">
+          <input class="form-check-input subject" type="checkbox" name="conteudo" value="React" id="React"> React
+        </label>
+        <label class="form-check-label" for="SQL">
+          <input class="form-check-input subject" type="checkbox" name="conteudo" value="SQL" id="SQL"> SQL
+        </label>
+        <label class="form-check-label" for="Python">
+          <input class="form-check-input subject" type="checkbox" name="conteudo" value="Python" id="Python"> Python
+        </label>
+      </div>
+        <!-- requisito 14 -->
+        <hr />
+       <div class="d-flex">
+        <label id="label-rate"> Como você avalia a Trybewarts? </label>
+        <div id='trybe-rating'>
+        </div>
+       </div>
+        <!-- requisito 15 -->
+        <label for="textarea" class='textarea'>Deixe seu comentário: </label>
+        <textarea class="form-control" rows="3" id="textarea" name="commentArea" maxlength="500"></textarea>
+        <p><span id="counter">500</span> caracteres restantes</p>
+       <!-- requisito 16 -->
+    <label for="agreement" id="label-infos" class="form-check-label mb-3">
+      <input type="checkbox"class="form-check-input" name="agreement" id="agreement"> Você concorda com o uso das informações acima?
+    </label>
+    <!-- requisito 17 -->
+    <button class="btn btn-success" type="submit" id="submit-btn" disabled>Enviar</button>
+    </form>
+    <!-- requisito 7 -->
+    <img src="images/trybewarts-colored.svg" alt="logo trybe" id="trybewarts-forms-logo">
+  </main>
+  <footer class="mt-4">
+    Direitos reservados à Trybewarts©
+  </footer>
+    <script src="script.js"></script>
+</body>
+</html>

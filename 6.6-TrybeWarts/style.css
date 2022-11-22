@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  background-color: whitesmoke;
+}
+
+header {
+  padding: 15px 10px;
+}
+
+h1 {
+  opacity: 1;
+  animation: flicker 5s linear reverse infinite;
+}
+
+header h1 {
+  font-family: lora, serif;
+  font-weight: 600;
+  color: white;
+  font-size: 50px;
+  user-select: none;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  justify-content: space-between;
+  align-items: center;
+}
+
+main form {
+  min-width: 675px;
+}
+
+.header img {
+  width: 60px;
+}
+
+.trybewarts-login {
+  display: flex;
+  align-items: center;
+}
+
+.trybewarts-login button {
+  height: 38px;
+}
+
+input {
+  margin: 5px;
+  max-width: 90%;
+}
+
+label {
+  margin-top: 10px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.header form {
+  width: 400px;
+}
+
+/* requisito 7 */
+#trybewarts-forms-logo {
+  height: 500px;
+  width: auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+  background-color: black;
+  width: 100%;
+  color: white;
+  font-family: lora, serif;
+  bottom: 0;
+}
+
+h1:after {
+  content: '';
+  width: 150%;
+  box-shadow: -35px 0 60px 8px 'white';
+}
+
+@media screen and ( max-width : 800px ) {
+
+  .header {
+    flex-direction: column;
+  }
+
+  .trybewarts-login {
+    flex-direction: column;
+  }
+
+  #trybewarts-forms-logo {
+    height: 300px;
+    margin: 30px 0 50px;
+  }
+
+  footer {
+    padding: 10px 0;
+  }
+
+  form {
+    align-items: center;
+  }
+
+  main form {
+    min-width: auto;
+  }
+
+}
+
+/* Código visto e inspirado em: https://codepen.io/prathameshkoshti/pen/PVVRMG */
+
+@keyframes flicker {
+
+  25% {
+    opacity: 0.5;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  35% {
+    opacity: 0.1;
+  }
+
+  40% {
+    opacity: 0.25;
+  }
+
+  45% {
+    opacity: 0.5;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.85;
+  }
+
+  80% {
+    opacity: 0.4;
+  }
+
+  90% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
