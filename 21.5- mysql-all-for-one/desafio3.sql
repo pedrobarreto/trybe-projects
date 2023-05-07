@@ -1,0 +1,1 @@
+SELECT products.id FROM northwind.products;
