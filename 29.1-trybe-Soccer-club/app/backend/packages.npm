@@ -1,0 +1,3 @@
+bcryptjs
+--save-dev @types/bcryptjs
+--save @types/jest
