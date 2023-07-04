@@ -1,0 +1,20 @@
+.header {
+  align-items: center;
+  background-color: #036b52;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  width: 100px;
+}
+
+.user-name {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #063031;
+  font-size: 1.4rem;
+  padding: 0.5rem 2.4rem;
+}

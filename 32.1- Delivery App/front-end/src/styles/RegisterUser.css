@@ -1,0 +1,67 @@
+.register-form {
+
+  /* align-items: center; */
+  background: #e5efe9;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+
+  /* display: inline-block; */
+  justify-content: space-around;
+  left: 10%;
+  padding: 2rem 0;
+  top: 15rem;
+  width: 80%;
+}
+
+.btn-register {
+  align-items: center;
+  background-color: #35e49b;
+  border-radius: 0.5rem;
+  color: #036b52;
+  display: flex;
+  flex-direction: column;
+  height: 2.8rem;
+  justify-content: space-around;
+  margin-top: 2%;
+  text-decoration: none;
+  transition: all 0.1s;
+  width: 11rem;
+}
+
+.user-register {
+  display: flex;
+  flex-flow: row;
+}
+
+.input-name {
+  border: none;
+  border-bottom: 1px solid #141414;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  width: 15%;
+}
+
+.input-email {
+  border: none;
+  border-bottom: 1px solid #141414;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  width: 15%;
+}
+
+.input-password {
+  border: none;
+  border-bottom: 1px solid #141414;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  width: 15%;
+}
+
+.select-type {
+  border: none;
+  border-bottom: 1px solid #141414;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  width: 14%;
+}
